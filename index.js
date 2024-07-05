@@ -2,8 +2,8 @@ const express = require("express")
 
 //importing router
 const jokeRouter=require("./joke")
-const imgeRouter=require("./imges")
-const randomApi=require("./jokeandimg")
+// const imgeRouter=require("./imges")
+// const randomApi=require("./jokeandimg")
 //server Intialization
 const app = express();
 
@@ -11,9 +11,9 @@ const app = express();
 //calling router
 
 app.use(jokeRouter)
-app.use(imgeRouter)
+// app.use(imgeRouter)
 app.use(express.static("imges"))
-app.use(randomApi)
+// app.use(randomApi)
 //using /
 
 app.get("/user",(req,res)=>{
